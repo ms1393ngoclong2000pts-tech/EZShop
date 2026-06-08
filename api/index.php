@@ -10,6 +10,8 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 header("Content-Type: application/json; charset=UTF-8");
 
+
+
 // Trả về thành công ngay lập tức cho preflight request OPTIONS
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
